@@ -4,8 +4,19 @@
 
 #include <stdio.h>
 
-int main() {
-  
-  return 0;
+#include<iostream>
+int main(void)
+{
+ float cm,inches; //variable declaration
+ 
+ std::cout<<" Enter a length in cm : "; // user input 
+ std::cin>>cm;
+ 
+ //calculation 
+ 
+ inches = cm / 2.54;
+ 
+ std::cout<<"Length is inches "<<inches<<std::endl; 
+ return 0;
 }
 

@@ -16,9 +16,23 @@ Amount = 20 x 50 = 1000
 Distance -> 50
 Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
-#include <stdio.h>
-
-int main() {
-  
-  return 0;
+#include<iostream>
+using namespace std;
+int main()
+{
+ int no;
+ long fac;//variable decleration 
+ 
+ cout<<"enter a number : ";//input values
+ cin>>no;
+ 
+ fac = 1;
+ for(int r=no;r>=1;r--)
+ {
+ fac = fac * r;
+ }
+ 
+ cout<<"factorial of "<<no<<" is "<<fac<<endl;//display 
+ 
+ return 0;
 }
